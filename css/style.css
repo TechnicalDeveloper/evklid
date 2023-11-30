@@ -1,3 +1,73 @@
+@font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat-Regular"),
+  url("../font/Montserrat-Regular.woff2") format("woff2"),
+  url("../font/Montserrat-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat-Medium"),
+  url("../font/Montserrat-Medium.woff2") format("woff2"),
+  url("../font/Montserrat-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat-SemiBold"),
+  url("../font/Montserrat-SemiBold.woff2") format("woff2"),
+  url("../font/Montserrat-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat-Bold"),
+  url("../font/Montserrat-Bold.woff2") format("woff2"),
+  url("../font/Montserrat-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat-ExtraBold"),
+  url("../font/Montserrat-ExtraBold.woff2") format("woff2"),
+  url("../font/Montserrat-ExtraBold.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: local("Inter-Regular"),
+  url("../font/Inter-Regular.woff2") format("woff2"),
+  url("../font/Inter-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Muller";
+  src: local("Muller-Regular"),
+  url("../font/MullerRegular.woff2") format("woff2"),
+  url("../font/MullerRegular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
   --color-ff9900: #ff9900;
   --color-ffb84d: #ffb84d;
@@ -542,24 +612,24 @@ img {
 
 .faq__list {
   display: flex;
-  flex-direction: row; /* Align children in a row */
-  justify-content: space-between; /* Distribute space between items */
-  flex-wrap: wrap; /* Allow items to wrap in smaller screens */
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 
 .section-faq {
   margin-bottom: 20px;
   line-height: 84px;
-  text-align: center; /* Center the section title if needed */
+  text-align: center;
 }
 
 .faq__item {
   border: 1px solid var(--color-cacaca);
   border-radius: var(--border-radius-main);
-  flex-basis: calc(33.333% - 26px); /* Allocate width for three items per row, subtracting the margin */
-  margin: 0 8px 16px; /* Margin for spacing between items */
-  box-sizing: border-box; /* Include padding and borders in the width calculation */
+  flex-basis: calc(33.333% - 26px);
+  margin: 0 8px 16px;
+  box-sizing: border-box;
 }
 
 .faq__item:last-child {
@@ -569,9 +639,9 @@ img {
 .faq__btn {
   padding: 65px 65px 65px 60px;
   display: flex;
-  flex-direction: column; /* Align text in a column */
-  align-items: flex-start; /* Align items to the start of the button */
-  width: 100%; /* Button takes full width of the faq__item */
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
 }
 
 .faq__btn-text-title {
@@ -750,11 +820,11 @@ img {
 }
 
 .form__input:hover {
-  background-color: var(--color-ffb84d);
+  background-color: var(--color-666666);
 }
 
 .form__input:active {
-  background-color: var(--color-e1670e);
+  background-color: var(--color-666666);
 }
 
 

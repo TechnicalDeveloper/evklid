@@ -3,51 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Евклид</title>
+  <title>Сайт евклид</title>
   <link rel="shortcut icon" href="favicon.svg" type="image/x-icon">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/media.css">
 </head>
 <body>
   <header class="header">
     <div class="container header__container flex">
-      <button class="burger__btn btn btn-reset">
-        <span class="burger__line"></span>
-        <span class="burger__line"></span>
-        <span class="burger__line"></span>
-      </button>
-
-      <nav class="burger__nav">
-        <ul class="nav__list list-reset flex">
-          <li class="nav__item">
-            <a href="#" class="nav__link">
-              О&nbsp;нас
-            </a>
-          </li>
-          <li class="nav__item">
-            <a href="#" class="nav__link">
-              Проекты
-            </a>
-          </li>
-          <li class="nav__item">
-            <a href="#" class="nav__link">
-              Этапы
-            </a>
-          </li>
-          <li class="nav__item">
-            <a href="#" class="nav__link">
-              Отзывы
-            </a>
-          </li>
-          <li class="nav__item">
-            <a href="#" class="nav__link">
-              Контакты
-            </a>
-          </li>
-        </ul>
-      </nav>
-
       <a href="#" class="header__logo">
         <img src="img/svg/Logo.svg" alt="logo" class="header__logo-image">
       </a>
@@ -56,13 +19,8 @@
         <nav class="header__nav nav">
           <ul class="nav__list list-reset flex">
             <li class="nav__item">
-              <a href="#" class="nav__link">
-                О&nbsp;нас
-              </a>
-            </li>
-            <li class="nav__item">
-              <a href="#" class="nav__link">
-                Проекты
+              <a  href="#about_section" class="nav__link">
+                О нас
               </a>
             </li>
             <li class="nav__item">
@@ -71,19 +29,19 @@
               </a>
             </li>
             <li class="nav__item">
-              <a href="#" class="nav__link">
-                Отзывы
+              <a href="#our-work_section" class="nav__link">
+                Вопросы
               </a>
             </li>
             <li class="nav__item">
               <a href="#" class="nav__link">
-                Контакты
+                Оставить заявку
               </a>
             </li>
           </ul>
         </nav>
 
-        <button class="btn btn-reset search__btn">
+        <button class="btn btn-reset search">
           <svg class="search__icon" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
             <g id="search">
               <rect id="Rectangle 3" width="7.56126" height="1.89031"
@@ -120,7 +78,7 @@
 
     <section class="about section-offset">
       <div class="container">
-        <h2 class="section-title about__title">
+        <h2 id="about_section" class="section-title about__title">
           О&nbsp;нас
         </h2>
         <p class="about__descr">
@@ -135,7 +93,6 @@
         </p>
         <div class="about__wrapper flex">
           <div class="about__left flex">
-            <img class="about__img" src="img/jpg/about-bg.jpg" alt="About">
             <div class="about__left-content flex">
               <p class="about__left-text">
                 Принимая во внимание показатели успешности, перспективное планирование способствует подготовке
@@ -147,12 +104,7 @@
             </div>
           </div>
           <div class="about__right flex">
-            <article class="about__article flex">
-              <picture class="about__icon">
-                <source media="(max-width: 576px)" srcset="img/svg/about-icon-1-small.svg">
-                <img src="img/svg/about-icon-1.svg" alt="Icon">
-              </picture>
-              <div class="about__card-wrapper">
+            <div class="about__article about__article-img1">
                 <h3 class="about__card-title">
                   Консультация с&nbsp;широким активом
                 </h3>
@@ -161,14 +113,8 @@
                   для
                   как самодостаточных, так и&nbsp;внешне зависимых концептуальных решений
                 </p>
-              </div>
-            </article>
-            <article class="about__article flex">
-              <picture class="about__icon">
-                <source media="(max-width: 576px)" srcset="img/svg/about-icon-2-small.svg">
-                <img src="img/svg/about-icon-2.svg" alt="Icon">
-              </picture>
-              <div class="about__card-wrapper">
+            </div>
+            <div class="about__article about__article-img2">
                 <h3 class="about__card-title">
                   В своём стремлении повысить
                 </h3>
@@ -176,8 +122,7 @@
                   Качество жизни, они забывают, что сплочённость команды профессионалов представляет собой интересный
                   эксперимент проверки прогресса профессионального сообщества
                 </p>
-              </div>
-            </article>
+            </div>
           </div>
         </div>
       </div>
@@ -185,26 +130,34 @@
 
     <section class="our-work section-offset">
       <div class="container">
-        <h2 class="section-title our-work__title">
+        <h2 id="our-work_section" class="section-title our-work__title">
           Этапы
         </h2>
         <div class="our-work__wrapper flex">
-          <article class="our-work__left flex">
-            <div class="our-work__descr-wrapper">
+          <div class="our-work__left flex">
               <h3 class="our-work__card-title">
                 Проводим консультацию
               </h3>
               <p class="our-work__descr">
-                Влечёт за&nbsp;собой процесс внедрения и&nbsp;модернизации приоритизации разума<br> над эмоциями.
-                В&nbsp;рамках спецификации современных стандартов, некоторые<br> особенности внутренней политики будут
-                объективно рассмотрены соответствующими инстанциями.<br>
-                А&nbsp;также представители современных социальных резервов, инициированные<br> исключительно синтетически,
-                ограничены исключительно образом мышления. Являясь<br> всего лишь частью общей картины, реплицированные
-                с&nbsp;зарубежных источников, современные исследования подвергнуты целой серии независимых исследований.<br>
-                Кстати, стремящиеся вытеснить традиционное производство, нанотехнологии освещают чрезвычайно интересные
-                особенности картины в&nbsp;целом, однако конкретные выводы, разумеется, призваны к&nbsp;ответу.
+                Влечёт за&nbsp;собой процесс внедрения и&nbsp;модернизации приоритизации разума
+                над эмоциями.
+                В&nbsp;рамках спецификации современных стандартов, некоторые
+                особенности внутренней политики будут
+                объективно рассмотрены соответствующими
+                инстанциями.
               </p>
-            </div>
+            <p class="our-work__descr our-work__descr2">
+              А&nbsp;также представители современных социальных резервов, инициированные
+              исключительно синтетически,
+              ограничены исключительно образом мышления. Являясь
+              всего лишь частью общей картины, реплицированные
+              с&nbsp;зарубежных источников,
+              современные исследования подвергнуты целой серии независимых исследований.
+              Кстати, стремящиеся вытеснить традиционное производство, нанотехнологии освещают
+              чрезвычайно интересные
+              особенности картины в&nbsp;целом, однако конкретные выводы,
+              разумеется, призваны к&nbsp;ответу.
+            </p>
             <div class="our-work__btn-wrapper">
               <button class="btn btn-reset our-work__btn-main btn-contrast">
                 Подробнее
@@ -213,43 +166,40 @@
                 Договор
               </button>
             </div>
-          </article>
-          <div class="our-work__slide">
-            <!-- <img src="img/our-work/our-work-slide-1.jpg" alt="Консультации" class="our-work__image"> -->
           </div>
         </div>
       </div>
     </section>
 
-      <section class="faq section-offset">
+    <section class="faq section-offset__footer">
         <div class="container">
           <h2 class="section-title faq__title">
             Вопросы
           </h2>
           <ul class="faq__list list-reset">
             <li class="faq__item">
-              <button class="btn btn-reset faq__btn flex">
-            <span class="faq__btn-text-title">
+              <div class="faq__circle flex">
+            <h3 class="faq__circle-text-title">
               Из&nbsp;чего формируется конечная стоимость проекта?
-            </span>
-                <span class="faq__btn-text">Приятно, граждане, наблюдать, как&nbsp;некоторые особенности внутренней политики могут быть призваны к&nbsp;ответу.</span>
-              </button>
+            </h3>
+                <p class="faq__circle-text">Приятно, граждане, наблюдать, как&nbsp;некоторые особенности внутренней политики могут быть призваны к&nbsp;ответу.</p>
+              </div>
             </li>
             <li class="faq__item">
-              <button class="btn btn-reset faq__btn flex">
-            <span class="faq__btn-text-title">
+              <div class="faq__circle flex">
+            <h3 class="faq__circle-text-title">
               У&nbsp;меня есть свой проект. Сможем&nbsp;ли мы&nbsp;его реализовать?
-            </span>
-                <span class="faq__btn-text">А&nbsp;ещё&nbsp;некоторые особенности внутренней политики, которые представляют собой яркий пример континентального типа.</span>
-              </button>
+            </h3>
+                <p class="faq__circle-text">А&nbsp;ещё&nbsp;некоторые особенности внутренней политики, которые представляют собой яркий пример континентального типа.</p>
+              </div>
             </li>
             <li class="faq__item">
-              <button class="btn btn-reset faq__btn flex">
-            <span class="faq__btn-text-title">
+              <div class="faq__circle flex">
+            <h3 class="faq__circle-text-title">
               Я&nbsp;выбираю между разными компаниями. Почему вы?
-            </span>
-                <span class="faq__btn-text">Явные признаки победы институционализации набирают популярность среди определённых слоёв населения.</span>
-              </button>
+            </h3>
+                <p class="faq__circle-text">Явные признаки победы институционализации набирают популярность среди определённых слоёв населения.</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -327,7 +277,7 @@
       </div>
 
       <div class="footer__center">
-        <h2 class="section-title footer__title">
+        <h2 id="contact_section" class="section-title footer__title">
           Оставить заявку
         </h2>
         <form action="#" method="post" class="form flex">

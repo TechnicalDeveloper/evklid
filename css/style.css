@@ -154,8 +154,8 @@ img {
 }
 
 .container {
-  /*max-width: 1920px;*/
-  padding: 7px 74px 0 75px;
+  max-width: 1920px;
+  padding: 0 75px;
   margin: 0 auto;
 }
 
@@ -182,7 +182,7 @@ img {
 }
 
 .header__container {
-  margin-top: -7px;
+  margin-top: -14px;
   align-items: center;
   justify-content: space-between;
 }
@@ -677,12 +677,13 @@ img {
 .footer {
   color: var(--color-cacaca);
   background-color: black;
+  padding: 50px 0;
 }
 
 .footer__container {
   justify-content: space-between;
   align-items: center;
-  padding-top: 93px;
+  /*padding-top: 93px;*/
   padding-bottom: 50px;
 }
 

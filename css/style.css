@@ -159,6 +159,10 @@ img {
   margin: 0 auto;
 }
 
+section {
+  padding-top: 28px !important;
+}
+
 .section-title {
   color: #000;
   font-size: 48px;
@@ -175,14 +179,13 @@ img {
 /* HEADER */
 
 .header {
-  padding-bottom: 25px;
-  padding-top: 14px;
   border-radius: 0 0 var(--border-radius-main) var(--border-radius-main);
   box-shadow: 0 5px 40px 0 rgba(0, 0, 0, 0.1);
 }
 
 .header__container {
-  margin-top: -14px;
+  padding: 14px 75px;
+  margin-bottom: 18px;
   align-items: center;
   justify-content: space-between;
 }

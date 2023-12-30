@@ -483,6 +483,7 @@ section {
 .our-work__title {
   margin: 0;
   margin-bottom: 30px;
+  padding-bottom: 30px;
 }
 
 .our-work__list {
@@ -608,6 +609,7 @@ section {
 }
 
 .faq__title {
+  padding-top: 23px;
   margin-bottom: 4px;
   line-height: 84px;
 }
